@@ -13,7 +13,24 @@
 		F5B5777D287BBF9700B240AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B5777B287BBF9700B240AE /* Main.storyboard */; };
 		F5B5777F287BBF9A00B240AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B5777E287BBF9A00B240AE /* Assets.xcassets */; };
 		F5B57782287BBF9A00B240AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B57780287BBF9A00B240AE /* LaunchScreen.storyboard */; };
+		F5B5778C287BC04D00B240AE /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B5778A287BC04D00B240AE /* EssentialFeediOS.framework */; };
+		F5B5778D287BC04D00B240AE /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5B5778A287BC04D00B240AE /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5B5778E287BC04D00B240AE /* EssentialFeedRevised.app in Resources */ = {isa = PBXBuildFile; fileRef = F5B5778B287BC04D00B240AE /* EssentialFeedRevised.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5B5778F287BC04D00B240AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5B5778D287BC04D00B240AE /* EssentialFeediOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F5B57772287BBF9700B240AE /* EssentialAppRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialAppRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		F5B5777E287BBF9A00B240AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B57781287BBF9A00B240AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5B57783287BBF9A00B240AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B5778A287BC04D00B240AE /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B5778B287BC04D00B240AE /* EssentialFeedRevised.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = EssentialFeedRevised.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B5778C287BC04D00B240AE /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,7 @@
 			children = (
 				F5B57774287BBF9700B240AE /* EssentialAppRevised */,
 				F5B57773287BBF9700B240AE /* Products */,
+				F5B57789287BC04D00B240AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +88,15 @@
 			path = EssentialAppRevised;
 			sourceTree = "<group>";
 		};
+		F5B57789287BC04D00B240AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5778A287BC04D00B240AE /* EssentialFeediOS.framework */,
+				F5B5778B287BC04D00B240AE /* EssentialFeedRevised.app */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +107,7 @@
 				F5B5776E287BBF9700B240AE /* Sources */,
 				F5B5776F287BBF9700B240AE /* Frameworks */,
 				F5B57770287BBF9700B240AE /* Resources */,
+				F5B5778F287BC04D00B240AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B57782287BBF9A00B240AE /* LaunchScreen.storyboard in Resources */,
+				F5B5778E287BC04D00B240AE /* EssentialFeedRevised.app in Resources */,
 				F5B5777F287BBF9A00B240AE /* Assets.xcassets in Resources */,
 				F5B5777D287BBF9700B240AE /* Main.storyboard in Resources */,
 			);
